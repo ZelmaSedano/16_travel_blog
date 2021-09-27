@@ -82,7 +82,7 @@ function Navbar() {
                   offset={-70}
                   duration={500}
                 >
-                  Appalachia
+                  Holland
                 </Link2>
               </li>
               <li className="nav-item ">
@@ -95,7 +95,7 @@ function Navbar() {
                   offset={-70}
                   duration={500}
                 >
-                  Scandinavia
+                  Portugal
                 </Link2>
               </li>
               <li className="nav-item ">
@@ -108,17 +108,17 @@ function Navbar() {
                   offset={-70}
                   duration={500}
                 >
-                  Holland
+                  Scandinavia
                 </Link2>
               </li>
-              {/* Contact Button */}
+              {/* Where you go to add blog posts */}
               <li className="nav-item ">
                 <Link1
                   className="nav-links contact-link"
-                  to="/contact"
+                  to="/admin"
                   onClicl={closeMobileMenu}
                 >
-                  Contact
+                  Admin
                 </Link1>
               </li>
               {/* End Smooth Scroll Section */}

@@ -1,8 +1,13 @@
-export const getTasks = () => _get("/api/tasks");
+// export const getTasks = () => _get("/api/tasks");
+
+export const getPost1 = async () => {
+  const response = await fetch("/api/posts");
+  return response.json();
+};
 
 export const addTask = (name) => _post("/api/tasks", { name });
 
-const _get = async (url) => (await fetch(url)).json();
+// const _get = async (url) => (await fetch(url)).json();
 
 const _post = async (url, body) => {
   const response = await fetch(url, {

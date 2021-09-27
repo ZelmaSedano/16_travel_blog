@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Utrecht from "./components/Utrecht";
 
 import "./App.css";
 
@@ -15,7 +16,7 @@ const App = () => (
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </main>
   </>
@@ -27,10 +28,12 @@ const Home = () => (
     <h2>{process.env.REACT_APP_SUBTITLE}</h2> */}
     <Navbar />
     <Hero />
+    <Utrecht />
   </>
 );
 
-const Contact = () => (
+// form to add post
+const Admin = () => (
   <>
     <h1>Dashboard</h1>
   </>

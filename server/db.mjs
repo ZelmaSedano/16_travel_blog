@@ -5,6 +5,12 @@ const db = initDb();
 
 export const getTasks = () => db.any("SELECT * FROM tasks");
 
+// get first post
+export const getPost1 = () =>
+  db.any(
+    "SELECT title, date, places_to_visit, description FROM post WHERE id = 1;",
+  );
+
 export const addTask = (name) =>
   db.one("INSERT INTO tasks(name) VALUES(${name}) RETURNING *", { name });
 
