@@ -4,7 +4,7 @@
 .navbar {
   /* display: flex - this will float everything on the same line, including navbar-top*/
   /* background: url('./images/img-11.jpg') center center/cover no-repeat; */
-  background: url("./images/Utrecht-top.jpg") no-repeat center center fixed;
+  background: url("./images/utrecht/Utrecht-top.jpg") no-repeat center center fixed;
   background-size: cover;
   /* height: 115px; */
   top: 0;
@@ -132,6 +132,7 @@
 .nav-links:hover {
   color: #fff;
   font-weight: 300;
+  padding: 0.3rem 0.1rem;
 
 }
 

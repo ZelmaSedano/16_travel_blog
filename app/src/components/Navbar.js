@@ -116,7 +116,7 @@ function Navbar() {
                 <Link1
                   className="nav-links contact-link"
                   to="/admin"
-                  onClicl={closeMobileMenu}
+                  onClick={closeMobileMenu}
                 >
                   Admin
                 </Link1>

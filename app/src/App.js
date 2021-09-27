@@ -2,8 +2,10 @@ import * as React from "react";
 
 import { Routes, Route } from "react-router-dom";
 
+import Fredrikstad from "./components/Fredrikstad";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Portugal from "./components/Portugal";
 import Utrecht from "./components/Utrecht";
 
 import "./App.css";
@@ -29,6 +31,8 @@ const Home = () => (
     <Navbar />
     <Hero />
     <Utrecht />
+    <Portugal />
+    <Fredrikstad />
   </>
 );
 

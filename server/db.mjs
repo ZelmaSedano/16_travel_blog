@@ -3,16 +3,14 @@ import pgp from "pg-promise";
 
 const db = initDb();
 
-export const getTasks = () => db.any("SELECT * FROM tasks");
+export const getPost1 = () => db.any("SELECT * FROM post");
 
-// get first post
-export const getPost1 = () =>
-  db.any(
-    "SELECT title, date, places_to_visit, description FROM post WHERE id = 1;",
-  );
+export const getPost2 = () => db.any("SELECT * FROM post2");
 
-export const addTask = (name) =>
-  db.one("INSERT INTO tasks(name) VALUES(${name}) RETURNING *", { name });
+export const getPost3 = () => db.any("SELECT * FROM post3");
+
+// export const addTask = (name) =>
+//   db.any("INSERT INTO tasks(name) VALUES(${name}) RETURNING *", { name });
 
 function initDb() {
   let connection;
