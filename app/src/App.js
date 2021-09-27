@@ -1,18 +1,21 @@
 import * as React from "react";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import Tasks from "./Tasks";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
+import "./App.css";
 
 const App = () => (
   <>
-    <nav>
+    {/* <nav>
       <Link to="/">Home</Link> | <Link to="dashboard">Dashboard</Link>
-    </nav>
+    </nav> */}
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
   </>
@@ -20,13 +23,14 @@ const App = () => (
 
 const Home = () => (
   <>
-    <h1>{process.env.REACT_APP_TITLE}</h1>
-    <h2>{process.env.REACT_APP_SUBTITLE}</h2>
-    <Tasks />
+    {/* <h1>{process.env.REACT_APP_TITLE}</h1>
+    <h2>{process.env.REACT_APP_SUBTITLE}</h2> */}
+    <Navbar />
+    <Hero />
   </>
 );
 
-const Dashboard = () => (
+const Contact = () => (
   <>
     <h1>Dashboard</h1>
   </>
