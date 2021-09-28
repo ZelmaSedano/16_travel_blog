@@ -1,7 +1,7 @@
 /* BUGS - Hover Effect not working: line 85 */
 
 /* PARENT1: <nav> that holds entire navbar menu */
-.navbar {
+.navbar-home {
   /* display: flex - this will float everything on the same line, including navbar-top*/
   /* background: url('./images/img-11.jpg') center center/cover no-repeat; */
   background: url("./images/utrecht/Utrecht-top.jpg") no-repeat center center fixed;

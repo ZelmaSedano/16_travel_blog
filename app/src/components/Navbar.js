@@ -39,7 +39,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar-home">
         <div className="filter">
           <div className="navbar-top">
             <a href="/">

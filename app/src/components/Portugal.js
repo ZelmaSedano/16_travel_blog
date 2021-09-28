@@ -5,7 +5,7 @@ import * as apiClient from "../apiClient";
 import "./Portugal.css";
 
 import Navbar2 from "./Navbar2.js";
-import Cathedral from "./images/portugal/Cathedral1.jpeg";
+import Cathedral1 from "./images/portugal/Cathedral1.jpeg";
 
 function Portugal() {
   const [post, setPost] = React.useState([]);
@@ -27,7 +27,7 @@ function Portugal() {
       {/* map over data*/}
       {post.map(({ id, title, date, places_to_visit, description }) => (
         <li key={id}>
-          <img className="cathedral" src={Cathedral} alt="cathedral"></img>
+          <img className="cathedral" src={Cathedral1} alt="cathedral"></img>
           <h3 className="data-header-portugal">{title}</h3>
           <p className="data-date">{date}</p>
           <p className="data-places">{places_to_visit}</p>
