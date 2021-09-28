@@ -7,3 +7,92 @@
   text-decoration: none;
   list-style: none;
 }
+
+.portugal-hero {
+  padding-top: 130px;
+  background: url("./components/images/portugal/Cascais1.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 755px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.norway-hero {
+  padding-top: 130px;
+  background: url("./components/images/norway/Downtown1.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 755px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.utrecht-hero {
+  background: url("./components/images/utrecht/Delft.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 730px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-header {
+  padding-top: 350px;
+}
+
+.hero-text-1 {
+  margin-top: 100px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 5.5rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.hero-text-1:hover{
+  opacity: 0.8;
+}
+
+/* Contact button */
+.nav-btn {
+  margin-top: 13px;
+}
+
+button {
+  /* styling */
+  margin-top: 275px;
+  background-color: #00586b;
+  border-radius: 25px;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CHILD: SIGN UP button <a> */
+.btn-text {
+  /* shows up in mobile */
+  display: block;
+  text-align: center;
+  /* inside spacing */
+  margin: 0;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+/* when you hover over SIGN UP button the background changes to white */
+.nav-links-mobile:hover {
+  background: #dd2b27;
+  color: #fff;
+  border: 1px solid #dd2b27;
+  transition: 250ms;
+}
+.btn {
+  display: none;
+}

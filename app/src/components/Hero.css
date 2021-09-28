@@ -1,16 +1,19 @@
 .hero-wrapper {
   background: url("./images/utrecht/utrecht-bottom.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 550px;
+  height: 565px;
 }
 
 .hero-text {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 140px;
   font-size: 5.5rem;
   color: white;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.hero-text:hover {
+  opacity: 0.8;
 }
 
 .hero-subtext {
@@ -22,4 +25,7 @@
   text-align: center;
   font-size: 4rem;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.hero-subtext:hover{
+  opacity: 0.8;
 }

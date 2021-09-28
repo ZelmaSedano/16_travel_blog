@@ -70,26 +70,25 @@ function Navbar() {
                   Home
                 </Link1>
               </li>
-
-              {/* Smooth Scroll Section */}
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Link2
                   className="nav-links smooth-scroll"
-                  to="section1"
                   activeClass="active"
+                  to="section1"
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
                 >
-                  Holland
+                  Netherlands
                 </Link2>
               </li>
-              <li className="nav-item ">
+              {/* Smooth Scroll Section */}
+              <li className="nav-item">
                 <Link2
                   className="nav-links smooth-scroll"
-                  activeClass="active"
                   to="section2"
+                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -108,7 +107,7 @@ function Navbar() {
                   offset={-70}
                   duration={500}
                 >
-                  Scandinavia
+                  Norway
                 </Link2>
               </li>
               {/* Where you go to add blog posts */}
