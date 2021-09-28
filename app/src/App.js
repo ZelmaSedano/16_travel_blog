@@ -103,10 +103,10 @@ const Admin = () => {
       {/* map over data*/}
       {post.map(({ id, title, date, places_to_visit, description }) => (
         <li key={id}>
-          <h3>{title}</h3>
-          <p>{date}</p>
-          <li>{places_to_visit}</li>
-          <p>{description}</p>
+          <h3 className="data-header-form">{title}</h3>
+          <p className="data-date-form">{date}</p>
+          <p className="data-places-form">{places_to_visit}</p>
+          <p className="data-description-form">{description}</p>
         </li>
       ))}
       {/* <AddPostForm addPost={addPost} /> */}
@@ -138,7 +138,7 @@ const AddPostForm = ({ addPost }) => {
   };
   return (
     <form {...{ onSubmit }}>
-      <h3>Add You Post in the Form Below:</h3>
+      <h3 className="form-header">Add Post:</h3>
       <div className="input-wrapper">
         <label>
           <input name="title" placeholder="Title" required />
@@ -150,9 +150,9 @@ const AddPostForm = ({ addPost }) => {
           <input name="places_to_visit" placeholder="Places to Visit" />
         </label>
         <label>
-          <input name="description" placeholder="Description" />
+          <textarea className="description" name="description" />
         </label>
-        <button>Add Post</button>
+        <button className="form-btn">Add Post</button>
       </div>
     </form>
   );

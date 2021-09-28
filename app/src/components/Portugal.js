@@ -25,7 +25,7 @@ function Portugal() {
         <li key={id}>
           <h3>{title}</h3>
           <p>{date}</p>
-          <li>{places_to_visit}</li>
+          <p>{places_to_visit}</p>
           <p>{description}</p>
         </li>
       ))}

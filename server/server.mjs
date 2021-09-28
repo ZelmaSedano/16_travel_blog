@@ -32,7 +32,7 @@ postRouter.post("/api/post/3", async (request, response) => {
 });
 
 postRouter.post("/api/post/4", async (request, response) => {
-  const post = await db.addPost3();
+  const post = await db.addPost4();
   response.json(post);
 });
 
