@@ -34,48 +34,4 @@ function Utrecht() {
   );
 }
 
-// const AddPostForm = ({ addPost }) => {
-//   const onSubmit = (event) => {
-//     event.preventDefault();
-//     const form = event.currentTarget;
-//     // getting what's entered into form out of the form
-//     const {
-//       title: { value: title },
-//       date: { value: date },
-//       places_to_visit: { value: places_to_visit },
-//       description: { value: description },
-//     } = form.elements;
-//     // checking to see if the data is passing correctly
-//     console.log(title, date, places_to_visit, description);
-//     addPost({
-//       title,
-//       date,
-//       places_to_visit,
-//       description,
-//     });
-//     // everytime you click the 'add' button, the form clears
-//     form.reset();
-//   };
-//   return (
-//     <form {...{ onSubmit }}>
-//       <h3>Please enter animal sighting:</h3>
-//       <div className="input-wrapper">
-//         <label>
-//           <input name="title" placeholder="Title" required />
-//         </label>
-//         <label>
-//           <input name="date" placeholder="Date" required />
-//         </label>
-//         <label>
-//           <input name="places_to_visit" placeholder="Places to Visit" />
-//         </label>
-//         <label>
-//           <input name="description" placeholder="Description" />
-//         </label>
-//         <button>Add Sighting</button>
-//       </div>
-//     </form>
-//   );
-// };
-
 export default Utrecht;

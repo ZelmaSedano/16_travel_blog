@@ -34,6 +34,87 @@ CREATE TABLE public.post (
 
 
 --
+-- Name: post2; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.post2 (
+    id integer NOT NULL,
+    title text,
+    date text,
+    places_to_visit text,
+    description text
+);
+
+
+--
+-- Name: post2_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+ALTER TABLE public.post2 ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.post2_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- Name: post3; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.post3 (
+    id integer NOT NULL,
+    title text,
+    date text,
+    places_to_visit text,
+    description text
+);
+
+
+--
+-- Name: post3_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+ALTER TABLE public.post3 ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.post3_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- Name: post4; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.post4 (
+    id integer NOT NULL,
+    title text,
+    date text,
+    places_to_visit text,
+    description text
+);
+
+
+--
+-- Name: post4_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+ALTER TABLE public.post4 ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.post4_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
 -- Name: post_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -89,10 +170,33 @@ ALTER TABLE ONLY public.tasks ALTER COLUMN id SET DEFAULT nextval('public.tasks_
 --
 
 COPY public.post (id, title, date, places_to_visit, description) FROM stdin;
-10	\N	\N	\N	\N
 11	Explore Utrecht	09/15/2021	Winkel van Sinkel Dance Hall, Bond and Smolders Bakery, Stripwinkel Blunder Comic Store	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-12	Relax in Cascais	07/15/2021	Museu Condes de Castro Guimarães, Pastéis de Belém, Casa de Santa Maria	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-13	Explore Fredrikstad	05/15/2021	Gamlebyen (Old Town), Foten Beach, Isegran Fort	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\.
+
+
+--
+-- Data for Name: post2; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.post2 (id, title, date, places_to_visit, description) FROM stdin;
+1	Relax in Cascais	07/15/2021	Museu Condes de Castro Guimarães, Pastéis de Belém, Casa de Santa Maria	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\.
+
+
+--
+-- Data for Name: post3; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.post3 (id, title, date, places_to_visit, description) FROM stdin;
+1	Explore Fredrikstad	05/15/2021	Gamlebyen (Old Town), Foten Beach, Isegran Fort	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\.
+
+
+--
+-- Data for Name: post4; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.post4 (id, title, date, places_to_visit, description) FROM stdin;
 \.
 
 
@@ -107,6 +211,27 @@ COPY public.tasks (id, name) FROM stdin;
 4	Advocate for living wage
 5	Provide universal health care
 \.
+
+
+--
+-- Name: post2_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.post2_id_seq', 1, true);
+
+
+--
+-- Name: post3_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.post3_id_seq', 1, true);
+
+
+--
+-- Name: post4_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.post4_id_seq', 1, false);
 
 
 --

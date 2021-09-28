@@ -69,7 +69,8 @@
 }
 
 .logo-text:hover {
-  color: rgba(221, 43, 39, 0.5);
+  color: white;
+  opacity: 0.8;
   transition: all 0.3s ease-out;
 }
 
@@ -150,6 +151,7 @@
 
 /* mobile menu? */
 @media screen and (max-width: 812px) {
+
   .navbar {
     display: flex;
     height: 100px;
@@ -160,6 +162,10 @@
   }
 
   .logo-text {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     display: block;
   }
 

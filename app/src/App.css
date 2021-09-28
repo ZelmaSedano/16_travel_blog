@@ -88,9 +88,9 @@ button {
 
 /* when you hover over SIGN UP button the background changes to white */
 .nav-links-mobile:hover {
-  background: #dd2b27;
+  background: white;
   color: #fff;
-  border: 1px solid #dd2b27;
+  border: 1px solid white;
   transition: 250ms;
 }
 .btn {

@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { Routes, Route, Link } from "react-router-dom";
 
+import * as apiClient from "./apiClient";
 import Fredrikstad from "./components/Fredrikstad";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -76,10 +77,75 @@ const Norway2 = () => {
 };
 
 // form to add post
-const Admin = () => (
-  <>
-    <h1>Dashboard</h1>
-  </>
-);
+const Admin = () => {
+  const [post, setPost] = React.useState([]);
+
+  const loadPost = async () => {
+    // loads table 4
+    const result = await apiClient.getPost4();
+    setPost(result);
+    console.log("loadPost", result);
+  };
+
+  // const addPost = (post) => apiClient.addPost(post).then(loadPost);
+  const addPost = (post) => {
+    // addPost is working, but it's not getting to loadPost
+    console.log("addPost", post);
+    apiClient.addPost(post).then(loadPost);
+  };
+  React.useEffect(() => {
+    loadPost();
+  }, []);
+
+  return (
+    <div>
+      <AddPostForm addPost={addPost} />
+    </div>
+  );
+};
+
+const AddPostForm = ({ addPost }) => {
+  const onSubmit = (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    // getting what's entered into form out of the form
+    const {
+      title: { value: title },
+      date: { value: date },
+      places_to_visit: { value: places_to_visit },
+      description: { value: description },
+    } = form.elements;
+    // checking to see if the data is passing correctly
+    console.log("inside form", title, date, places_to_visit, description);
+    addPost({
+      title,
+      date,
+      places_to_visit,
+      description,
+    });
+    // everytime you click the 'add' button, the form clears
+    form.reset();
+  };
+  return (
+    <form {...{ onSubmit }}>
+      <h3>Please enter animal sighting:</h3>
+      <div className="input-wrapper">
+        <label>
+          <input name="title" placeholder="Title" required />
+        </label>
+        <label>
+          <input name="date" placeholder="Date" required />
+        </label>
+        <label>
+          <input name="places_to_visit" placeholder="Places to Visit" />
+        </label>
+        <label>
+          <input name="description" placeholder="Description" />
+        </label>
+        <button>Add Post</button>
+      </div>
+    </form>
+  );
+};
 
 export default App;
