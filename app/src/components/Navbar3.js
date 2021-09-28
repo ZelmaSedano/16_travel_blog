@@ -1,16 +1,13 @@
-// Desktop/2) React/YouTube/Brian
+// Fredrikstad Navbar
 import React, { useState, useEffect } from "react";
 
 import { Link as Link1 } from "react-router-dom";
 import { Link as Link2 } from "react-scroll";
 
-// documents
-// import { SignInButton } from "./SignInButton";
-import "./Navbar.css";
-// import logo from "./images/logo1.jpeg";
+import "./Navbar3.css";
 
 // COMPONENT
-function Navbar() {
+function Navbar3() {
   // States to alter:
   // used in handleclick(Hamburger/X) & closeMobileMenu(LINKS)
   const [click, setClick] = useState(false);
@@ -39,10 +36,10 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar-fredrikstad">
         <div className="filter">
           <div className="navbar-top">
-            <a href="/">
+            <a href="http://localhost:3000">
               <h4 className="navbar-top-text">Mexissippi</h4>
             </a>
           </div>
@@ -148,4 +145,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar3;

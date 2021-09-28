@@ -2,7 +2,10 @@ import React from "react";
 
 import * as apiClient from "../apiClient";
 
-import "./Utrecht.css";
+import "./Fredrikstad.css";
+
+import Navbar3 from "./Navbar3.js";
+import Norway from "./images/norway/beach_bottom.jpg";
 
 function Fredrikstad() {
   const [post, setPost] = React.useState([]);
@@ -20,13 +23,15 @@ function Fredrikstad() {
   }, []);
   return (
     <div className="utrecht-section" id="section1">
+      <Navbar3 />
       {/* map over data*/}
       {post.map(({ id, title, date, places_to_visit, description }) => (
         <li key={id}>
-          <h3>{title}</h3>
-          <p>{date}</p>
-          <p>{places_to_visit}</p>
-          <p>{description}</p>
+          <img className="norway" src={Norway} alt="norway"></img>
+          <h3 className="data-header-norway">{title}</h3>
+          <p className="data-date">{date}</p>
+          <p className="data-places">{places_to_visit}</p>
+          <p className="data-description">{description}</p>
         </li>
       ))}
       {/* <AddPostForm addPost={addPost} /> */}

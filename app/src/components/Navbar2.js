@@ -1,4 +1,4 @@
-// Desktop/2) React/YouTube/Brian
+// Portugal Navbar
 import React, { useState, useEffect } from "react";
 
 import { Link as Link1 } from "react-router-dom";
@@ -6,11 +6,11 @@ import { Link as Link2 } from "react-scroll";
 
 // documents
 // import { SignInButton } from "./SignInButton";
-import "./Navbar.css";
+import "./Navbar2.css";
 // import logo from "./images/logo1.jpeg";
 
 // COMPONENT
-function Navbar() {
+function Navbar2() {
   // States to alter:
   // used in handleclick(Hamburger/X) & closeMobileMenu(LINKS)
   const [click, setClick] = useState(false);
@@ -42,7 +42,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="filter">
           <div className="navbar-top">
-            <a href="/">
+            <a href="http://localhost:3000">
               <h4 className="navbar-top-text">Mexissippi</h4>
             </a>
           </div>
@@ -148,4 +148,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar2;

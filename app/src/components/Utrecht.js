@@ -4,6 +4,8 @@ import * as apiClient from "../apiClient";
 
 import "./Utrecht.css";
 
+import Amsterdam from "./images/utrecht/Amst.jpeg";
+
 function Utrecht() {
   const [post, setPost] = React.useState([]);
 
@@ -23,10 +25,11 @@ function Utrecht() {
       {/* map over data*/}
       {post.map(({ id, title, date, places_to_visit, description }) => (
         <li key={id}>
-          <h3>{title}</h3>
-          <p>{date}</p>
-          <p>{places_to_visit}</p>
-          <p>{description}</p>
+          <img className="amst" src={Amsterdam} alt="amsterdam"></img>
+          <h3 className="data-header">{title}</h3>
+          <p className="data-date">{date}</p>
+          <p className="data-places">{places_to_visit}</p>
+          <p className="data-description">{description}</p>
         </li>
       ))}
       {/* <AddPostForm addPost={addPost} /> */}

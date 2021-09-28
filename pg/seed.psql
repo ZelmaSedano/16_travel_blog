@@ -197,6 +197,7 @@ COPY public.post3 (id, title, date, places_to_visit, description) FROM stdin;
 --
 
 COPY public.post4 (id, title, date, places_to_visit, description) FROM stdin;
+4	Göteberg, Sverige	03/15/2021	Gothenburg Botanical Garden, City Museum, Slottsskogen (Castle Forest)	Gothenburg/Göteberg is a beautiful city on the Western coast of Sweden.  It has a series of large canals running throughout it, much like Utrecht & Amsterdam, but it is also home to many large forts built to protect Sweden against Denmark during the times they were intermittently at war.\n\nIt has a population of roughly 600,000 people, which counts for 6% of Sweden's entire population of 10 million.  It is a quick 4-hour drive from Oslo and 5-hour drive to Stockholm, and is very central and easy to travel from.  
 \.
 
 
@@ -231,7 +232,7 @@ SELECT pg_catalog.setval('public.post3_id_seq', 1, true);
 -- Name: post4_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.post4_id_seq', 1, false);
+SELECT pg_catalog.setval('public.post4_id_seq', 4, true);
 
 
 --
