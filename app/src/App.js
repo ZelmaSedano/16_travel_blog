@@ -12,7 +12,7 @@ import Utrecht from "./components/Utrecht";
 import "./App.css";
 
 const App = () => (
-  <>
+  <div>
     {/* <nav>
       <Link to="/">Home</Link> | <Link to="dashboard">Dashboard</Link>
     </nav> */}
@@ -25,7 +25,7 @@ const App = () => (
         <Route path="/norway" element={<Fredrikstad />} />
       </Routes>
     </main>
-  </>
+  </div>
 );
 
 const Home = () => (
@@ -100,6 +100,16 @@ const Admin = () => {
   return (
     <div>
       <AddPostForm addPost={addPost} />
+      {/* map over data*/}
+      {post.map(({ id, title, date, places_to_visit, description }) => (
+        <li key={id}>
+          <h3>{title}</h3>
+          <p>{date}</p>
+          <li>{places_to_visit}</li>
+          <p>{description}</p>
+        </li>
+      ))}
+      {/* <AddPostForm addPost={addPost} /> */}
     </div>
   );
 };
@@ -128,7 +138,7 @@ const AddPostForm = ({ addPost }) => {
   };
   return (
     <form {...{ onSubmit }}>
-      <h3>Please enter animal sighting:</h3>
+      <h3>Add You Post in the Form Below:</h3>
       <div className="input-wrapper">
         <label>
           <input name="title" placeholder="Title" required />

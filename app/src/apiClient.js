@@ -25,17 +25,6 @@ export const getPost4 = async () => {
   return response.json();
 };
 
-// export const addPost = async () => {
-//   const response = await fetch("/api/posts");
-//   console.log("apiClient", response);
-//   return response.json();
-// };
-
-// export const addPost = (post) => {
-//   console.log("apiClient", post);
-//   return _post("/api/posts", { post });
-// };
-
 const _get = async (url) => (await fetch(url)).json();
 
 const _post = async (url, body) => {
