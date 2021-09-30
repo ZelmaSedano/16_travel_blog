@@ -6,6 +6,7 @@ import * as apiClient from "./apiClient";
 import Fredrikstad from "./components/Fredrikstad";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Navbar2 from "./components/Navbar2";
 import Portugal from "./components/Portugal";
 import Utrecht from "./components/Utrecht";
 
@@ -44,7 +45,7 @@ const Portugal2 = () => {
   return (
     <div className="portugal-hero" id="section2">
       <a href="http://localhost:3000/portugal">
-        <h1 className="hero-text">Cascais, Portugal</h1>
+        <h1 className="hero-text-portugal">Cascais, Portugal</h1>
         <h4 className="hero-subtext">Secret Coves in Coastal Iberia</h4>
       </a>
     </div>
@@ -69,7 +70,7 @@ const Norway2 = () => {
   return (
     <div className="norway-hero" id="section3">
       <a href="http://localhost:3000/norway">
-        <h1 className="hero-text">Fredrikstad, Norway</h1>
+        <h1 className="hero-text-norway">Fredrikstad, Norway</h1>
         <h4 className="hero-subtext">Sommar in Norway's Hidden Gem</h4>
       </a>
     </div>
@@ -99,6 +100,7 @@ const Admin = () => {
 
   return (
     <div>
+      <Navbar2 />
       <AddPostForm addPost={addPost} />
       {/* map over data*/}
       {post.map(({ id, title, date, places_to_visit, description }) => (

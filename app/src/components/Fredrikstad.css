@@ -9,3 +9,34 @@
   font-size: 60px;
   margin-bottom: 175px;
 }
+
+.hero-text-norway {
+  padding-top: 150px;
+  font-size: 5rem;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-width: 812px) {
+  .hero-text-norway {
+    padding-top: 150px;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .hero-subtext {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text-norway {
+    padding-top: 150px;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .hero-subtext {
+    font-size: 2rem;
+  }
+}

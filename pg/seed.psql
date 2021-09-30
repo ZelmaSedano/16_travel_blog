@@ -170,7 +170,7 @@ ALTER TABLE ONLY public.tasks ALTER COLUMN id SET DEFAULT nextval('public.tasks_
 --
 
 COPY public.post (id, title, date, places_to_visit, description) FROM stdin;
-11	Explore Utrecht	09/15/2021	Winkel van Sinkel Dance Hall, Bond and Smolders Bakery, Stripwinkel Blunder Comic Store	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+11	Explore Utrecht	09/15/2021	Winkel van Sinkel Dance Hall, Bond and Smolders Bakery, Stripwinkel Blunder Comic Store	Utrecht is a small city just south of Amsterdam.  It is regionally famous for its medieval city center, its winding canals, and its lively university district.  Utrecht is home to The Dom Tower which is a large tower that is the tallest church tower in The Netherlands.  There is nothing quite like Dutch charm, and Utrecht is a great place to visit any time of year
 \.
 
 
@@ -179,7 +179,7 @@ COPY public.post (id, title, date, places_to_visit, description) FROM stdin;
 --
 
 COPY public.post2 (id, title, date, places_to_visit, description) FROM stdin;
-1	Relax in Cascais	07/15/2021	Museu Condes de Castro Guimarães, Pastéis de Belém, Casa de Santa Maria	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1	Relax in Cascais	07/15/2021	Museu Condes de Castro Guimarães, Pastéis de Belém, Casa de Santa Maria	Cascais is a coastal resort town just west of Lisbon.  It is known for its sandy beaches and busy marins, as well as its old town and medival forts.  
 \.
 
 
@@ -188,7 +188,7 @@ COPY public.post2 (id, title, date, places_to_visit, description) FROM stdin;
 --
 
 COPY public.post3 (id, title, date, places_to_visit, description) FROM stdin;
-1	Explore Fredrikstad	05/15/2021	Gamlebyen (Old Town), Foten Beach, Isegran Fort	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1	Explore Fredrikstad	05/15/2021	Gamlebyen (Old Town), Foten Beach, Isegran Fort	Fredrikstad is a small city an hour and half south of Oslo.  The picturesque Old Town is situated inside a star-shaped network of canals, and is the best-preserved fortified town in Northern Europe.
 \.
 
 

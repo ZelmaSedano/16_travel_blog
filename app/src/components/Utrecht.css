@@ -36,3 +36,29 @@ h1 {
   margin-left: 10px;
   width: 80%;
 }
+
+.data-header-utrecht {
+  margin-top: -200px;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 175px;
+}
+
+
+.hero-text-portugal {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text-portugal {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .hero-subtext {
+    font-size: 2rem;
+  }
+}

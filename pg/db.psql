@@ -2,12 +2,19 @@ CREATE TABLE post (ID int generated always as identity, title text, date text, p
 
 INSERT INTO post (title, date, places_to_visit, description) VALUES ('Explore Utrecht', '09/15/2021', 'Winkel van Sinkel Dance Hall, Bond and Smolders Bakery, Stripwinkel Blunder Comic Store', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 
+UPDATE post SET description = 'Utrecht is a small city just south of Amsterdam.  It is regionally famous for its medieval city center, its winding canals, and its lively university district.  Utrecht is home to The Dom Tower which is a large tower that is the tallest church tower in The Netherlands.  There is nothing quite like Dutch charm, and Utrecht is a great place to visit any time of year' WHERE id = 11;
+
 CREATE TABLE post2 (ID int generated always as identity, title text, date text, places_to_visit text, description text);
 
 INSERT INTO post2 (title, date, places_to_visit, description) VALUES ('Relax in Cascais', '07/15/2021', 'Museu Condes de Castro Guimarães, Pastéis de Belém, Casa de Santa Maria', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+
+UPDATE post2 SET description = 'Cascais is a coastal resort town just west of Lisbon.  It is known for its sandy beaches and busy marins, as well as its old town and medival forts.  ' WHERE id = 1;
 
 CREATE TABLE post3 (ID int generated always as identity, title text, date text, places_to_visit text, description text);
 
 INSERT INTO post3 (title, date, places_to_visit, description) VALUES ('Explore Fredrikstad', '05/15/2021', 'Gamlebyen (Old Town), Foten Beach, Isegran Fort', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 
+UPDATE post3 SET description = 'Fredrikstad is a small city an hour and half south of Oslo.  The picturesque Old Town is situated inside a star-shaped network of canals, and is the best-preserved fortified town in Northern Europe.' WHERE id = 1;
+
 CREATE TABLE post4 (ID int generated always as identity, title text, date text, places_to_visit text, description text);
+

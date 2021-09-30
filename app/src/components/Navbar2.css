@@ -237,7 +237,7 @@
 
   /* PARENT3: <ul>.active = mobile version */
   .nav-menu.active {
-    background: #00586b;
+    background: #01194d;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

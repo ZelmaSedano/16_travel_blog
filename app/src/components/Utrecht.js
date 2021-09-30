@@ -28,7 +28,7 @@ function Utrecht() {
       {post.map(({ id, title, date, places_to_visit, description }) => (
         <li key={id}>
           <img className="amst" src={Amsterdam} alt="amsterdam"></img>
-          <h3 className="data-header">{title}</h3>
+          <h3 className="data-header-utrecht">{title}</h3>
           <p className="data-date">{date}</p>
           <p className="data-places">{places_to_visit}</p>
           <p className="data-description">{description}</p>

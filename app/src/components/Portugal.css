@@ -13,3 +13,14 @@ h1 {
   font-size: 60px;
   margin-bottom: 175px;
 }
+
+@media screen and (max-width: 600px) {
+  .hero-text-portugal {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .hero-subtext {
+    font-size: 2rem;
+  }
+}

@@ -1,7 +1,7 @@
 .hero-wrapper {
   background: url("./images/utrecht/utrecht-bottom.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 565px;
+  height: 465px;
 }
 
 .hero-text {
@@ -29,3 +29,30 @@
 .hero-subtext:hover{
   opacity: 0.8;
 }
+
+@media screen and (max-width: 812px) {
+  .hero-text-portugal {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .hero-text {
+    font-size: 4rem;
+  }
+  .hero-subtext {
+    font-size: 3rem;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text-portugal {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .hero-subtext {
+    font-size: 2rem;
+  }
+}
+

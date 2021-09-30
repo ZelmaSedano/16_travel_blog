@@ -9,20 +9,20 @@
 }
 
 .portugal-hero {
-  padding-top: 130px;
+  padding-top: 150px;
   background: url("./components/images/portugal/Cascais1.jpeg") no-repeat center center;
   background-size: cover;
-  height: 755px;
+  height: 555px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .norway-hero {
-  padding-top: 130px;
+  padding-top: 80px;
   background: url("./components/images/norway/Downtown1.jpeg") no-repeat center center;
   background-size: cover;
-  height: 755px;
+  height: 555px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -136,7 +136,7 @@ button {
 
 .data-description-form {
   font-size: 18px;
-  width: 90%;
+  /* width: 90%; */
   margin-left: 5px;
   margin-bottom: 15px;
 }

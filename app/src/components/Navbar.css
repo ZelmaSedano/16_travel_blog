@@ -84,12 +84,12 @@
 .fa-bars {
   font-size: 1.9rem;
   color: white;
-  margin-top: 7px;
+
 }
 
 .menu-icon .fa-times {
   color: white;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-right: 3px;
 }
 
@@ -238,7 +238,7 @@
 
   /* PARENT3: <ul>.active = mobile version */
   .nav-menu.active {
-    background: #00586b;
+    background: #01194d;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
