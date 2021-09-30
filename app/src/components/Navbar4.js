@@ -70,44 +70,20 @@ function Navbar4() {
                 </Link1>
               </li>
               <li className="nav-item ">
-                <Link2
-                  className="nav-links smooth-scroll"
-                  activeClass="active"
-                  to="section1"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link1 className="nav-links contact-link" to="/utrecht">
                   Netherlands
-                </Link2>
+                </Link1>
               </li>
               {/* Smooth Scroll Section */}
               <li className="nav-item">
-                <Link2
-                  className="nav-links smooth-scroll"
-                  to="section2"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link1 className="nav-links contact-link" to="/portugal">
                   Portugal
-                </Link2>
+                </Link1>
               </li>
               <li className="nav-item ">
-                <Link2
-                  className="nav-links smooth-scroll"
-                  activeClass="active"
-                  to="section3"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
+                <Link1 className="nav-links contact-link" to="/norway">
                   Norway
-                </Link2>
+                </Link1>
               </li>
               {/* Where you go to add blog posts */}
               <li className="nav-item ">
