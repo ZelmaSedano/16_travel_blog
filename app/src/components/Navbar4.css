@@ -62,7 +62,7 @@
   display: none;
   font-size: 3rem;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 60px;
   font-weight: 100;
   color: white;
 }
@@ -83,12 +83,13 @@
 .fa-bars {
   font-size: 1.9rem;
   color: white;
-  margin-top: 7px;
+  margin-top: 20px;
+  margin-right: -4px; 
 }
 
 .menu-icon .fa-times {
   color: white;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-right: 3px;
 }
 
@@ -116,7 +117,7 @@
 /* CHILD - LINK <a> */
 .nav-links {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -131,9 +132,7 @@
 /* hover effect - border bottom & lifting effect when hovering */
 .nav-links:hover {
   color: #fff;
-  font-weight: 300;
-  padding: 0.3rem 0.1rem;
-
+  border-bottom: 1px solid white;
 }
 
 /* CHILD: LINK - SIGN UP LINK */
@@ -218,6 +217,12 @@
     font-size: 2rem;
   }
 
+  .fa-bars {
+    font-size: 1.9rem;
+    color: white;
+    margin-top: 23px;
+  }
+
   /* <ul> changes from grid to flex */
   .nav-menu {
     display: flex;
@@ -258,7 +263,6 @@
   .nav-links:hover {
     background-color: #fff;
     color: #fff;
-    border-radius: 0;
   }
 
   /* .mobile-link {
@@ -299,6 +303,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .logo-text {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: white;
+  }
   .navbar-logo {
     font-size: 1.6rem;
   }

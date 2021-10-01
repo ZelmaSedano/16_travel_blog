@@ -1,8 +1,7 @@
 // Portugal Navbar
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { Link as Link1 } from "react-router-dom";
-import { Link as Link2 } from "react-scroll";
 
 // documents
 // import { SignInButton } from "./SignInButton";
@@ -14,28 +13,9 @@ function Navbar2() {
   // States to alter:
   // used in handleclick(Hamburger/X) & closeMobileMenu(LINKS)
   const [click, setClick] = useState(false);
-  // show button or not - used in useEffect
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  // Contact Button disappears in Mobile View ********************
-  const showButton = () => {
-    if (window.innerWidth <= 1140) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  // button will only render once b/c of the empty parameters - if we don"t have this there the button will pop up in Mobile Menu when you refresh page
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  // when you change the size of the window, the button shows up
-  window.addEventListener("resize", showButton);
 
   return (
     <>

@@ -83,12 +83,12 @@
 .fa-bars {
   font-size: 1.9rem;
   color: white;
-  margin-top: 7px;
+  margin-top: 20px;
 }
 
 .menu-icon .fa-times {
   color: white;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-right: 3px;
 }
 
@@ -132,7 +132,6 @@
 .nav-links:hover {
   color: #fff;
   font-weight: 300;
-  padding: 0.3rem 0.1rem;
 
 }
 
@@ -258,7 +257,6 @@
   .nav-links:hover {
     background-color: #fff;
     color: #fff;
-    border-radius: 0;
   }
 
   /* .mobile-link {
